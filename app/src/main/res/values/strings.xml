@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Station app</string>
+    <string name="bestemming">Voer de bestemming in</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Volgende_treinen">Vertrek tijden</string>
+</resources>

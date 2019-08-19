@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="input"
+                type="be.hogent.student.native_apps_1_android_creative_app_bramhuys.data.InputModel"/>
+    </data>
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/main_input"  >
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:padding="25dp"
+                      android:background="@drawable/bc_belgium"
+        >
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:text="Waar wil je heen ?"
+                      android:textSize="30dp"
+                      android:textColor="@color/colorWhite"
+                      android:paddingTop="20dp"
+                      android:paddingBottom="30dp"/>
+
+            <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/input"
+                      android:background="@drawable/et_input_stad"
+                      android:height="40dp"
+                       android:text="@{input.text}"
+                      android:drawableLeft="@drawable/ic_zoeken"
+                      android:hint="@string/bestemming"
+                                  android:textAlignment="center"
+                      android:singleLine="true"
+
+                      />
+        </LinearLayout>
+
+
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_weight="1.1">
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:layout_weight="1.7">
+
+            <Button android:id="@+id/btn_zoeken" android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:text="Zoeken"
+                    android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
